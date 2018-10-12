@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Rigel">
+      <UniqueIdentifier>{325a29f3-4ce1-4c43-aa7b-452e24f4e0cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rigel">
+      <UniqueIdentifier>{7bf15026-bc73-4287-8e3d-197083de31de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rigel\Nodes">
+      <UniqueIdentifier>{45ce2b36-4ffb-42d1-b424-71e8c4ef00e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rigel\General">
+      <UniqueIdentifier>{2215e311-a02d-4477-b33a-cb05c0b60269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rigel\Interface">
+      <UniqueIdentifier>{51776e49-36b2-4634-a919-d98697a8b80e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rigel\Utility">
+      <UniqueIdentifier>{7f40c5f3-1600-47c0-b3ac-3b43cdb4a679}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Rigel-handlers.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-tcp-server.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-tcp-client.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-event.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-registry.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-client-slot.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-node.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-udp-connector.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-udp-server.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+    <ClCompile Include="UdpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigel-udp-client.cpp">
+      <Filter>Source Files\Rigel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rigel-config.hpp">
+      <Filter>Header Files\Rigel\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-macro.hpp">
+      <Filter>Header Files\Rigel\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-networking.hpp">
+      <Filter>Header Files\Rigel\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-handlers.hpp">
+      <Filter>Header Files\Rigel\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-argrecv.hpp">
+      <Filter>Header Files\Rigel\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-types.hpp">
+      <Filter>Header Files\Rigel\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-argfunc.hpp">
+      <Filter>Header Files\Rigel\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-node.hpp">
+      <Filter>Header Files\Rigel\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-tcp-client.hpp">
+      <Filter>Header Files\Rigel\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-tcp-server.hpp">
+      <Filter>Header Files\Rigel\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-SFML-networking.hpp">
+      <Filter>Header Files\Rigel\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-client-slot.hpp">
+      <Filter>Header Files\Rigel\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-event.hpp">
+      <Filter>Header Files\Rigel\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-registry.hpp">
+      <Filter>Header Files\Rigel\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-argwrap.hpp">
+      <Filter>Header Files\Rigel\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-udp-connector.hpp">
+      <Filter>Header Files\Rigel\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-udp-server.hpp">
+      <Filter>Header Files\Rigel\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigel-udp-client.hpp">
+      <Filter>Header Files\Rigel\Nodes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Notes.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

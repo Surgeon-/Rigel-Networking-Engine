@@ -1,0 +1,36 @@
+>>Required:
+-----------------------------------------------------------
+	Handler security (via exceptions)
+	Handler exception -> disconnect + event
+	unpack_exec -> not enough data
+	Fix Client swapping
+	Node copy/move
+	UDP packet splitting
+	1. Upload 2. Receive (for recv->send->recv cycle)
+
+>>Optional:
+-----------------------------------------------------------
+	Optimize registry updating
+	sf::String sending support ????????????????
+
+>>Safe-UDP Protocol:
+	-Message structure:
+		[8b] type = (100+) hello, connect, disconnect, data, usafe_data
+		[?b] data
+
+		HELLO:      [8b-type][?b-passphrase];
+		CONNECT:    [8b-type][?b-passphrase];
+		DISCONNECT: [8b-type];
+		DATA:       [8b-type][32b-ordinal][?b-data];
+		U-DATA:     [8b-type][32b-ordinal]{32b-acks}[32b-(-1)][?b-data];
+
+	-Client starts sending HELLO messages to the server
+	-Upon receiving, the server starts sending CONNECT messages to the client
+	-Upon receiving, the client stops sending HELLO messages and starts
+	 sending DATA messages
+
+>>Macro naming:
+-----------------------------------------------------------
+	RIGELNETW_CONFIG_* - Configuration macros
+	RIGELNETW_*        - Underlying macros
+	RN_*			   - Interface macros
